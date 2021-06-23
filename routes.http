@@ -1,0 +1,31 @@
+POST http://localhost:8000/api/insert_candidate HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Akshay Sharma",
+    "email": "akshaysharma123@gmail.com"
+}
+
+
+###
+
+POST http://localhost:8000/api/save_score_by_candidate_name HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Akshay Sharma",
+    "firstRound":8,
+    "secondRound":9,
+    "thirdRound":10
+}
+
+###
+
+GET http://localhost:8000/api//highestscoring_candidate_and_avgmarks_eachround_byallcandidate HTTP/1.1
+
+
+###
+
+GET http://localhost:8000/api//candidates_avgandtotal_score HTTP/1.1
+
+
